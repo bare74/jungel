@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  position: relative;
+  background-image: url("../img/background-pic.jpeg");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box1{
+    position:relative;
+
+    top: 400px;
+    left: 450px;
+    width: 150px;
+    height: 250px;
+}
+
+.box1 img {
+    height: 250px;
+    width: auto;
+}
