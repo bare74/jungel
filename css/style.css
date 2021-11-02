@@ -11,15 +11,15 @@ body {
   background-size: cover;
 }
 
-.box1 {
-  position: relative;
-
+.tiger {
+  position: absolute;
   top: 400px;
   left: 450px;
   width: 150px;
   height: 250px;
   animation-name: lion;
-  animation-duration: 2s;
+  animation-duration: 5s;
+animation: lion 9s infinite;
 }
 
 @keyframes lion {
@@ -28,59 +28,43 @@ body {
     top: 400px;
   }
   25% {
-    left: 450px;
+    left: 500px;
     top: 300px;
   }
   50% {
-    left: 450px;
+    left: 550px;
     top: 200px;
   }
   75% {
-    left: 450px;
-    top: 100px;
-  }
-  100% {
-    left: 450px;
-    top: 0px;
+    left: 600px;
+    top: 150px;
   }
 }
 
-.box1 img {
-  height: 250px;
-  width: auto;
-}
 
-.box2 {
+.monkey {
   position: absolute;
   top: 20px;
   left: 70%;
   width: 120px;
   height: 250px;
-}
-
-.box2 img {
-  height: 250px;
-  width: auto;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
-.box2 img:hover {
+.monkey:hover {
   opacity: 0;
 }
 
-.box3 {
+.bird {
   position: absolute;
   top: 20px;
   left: 30%;
   width: 120px;
   height: 100px;
   animation: bird 5s infinite;
-}
-
-.box3 {
   animation-timing-function: linear;
 }
 
@@ -91,9 +75,4 @@ body {
   to {
     left: 300px;
   }
-}
-
-.box3 img {
-  height: 100px;
-  width: auto;
 }
