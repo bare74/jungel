@@ -24,3 +24,24 @@ body {
     height: 250px;
     width: auto;
 }
+
+.box2{
+    position:absolute;
+    top: 20px;
+    left: 70%;
+    width: 120px;
+    height: 250px;
+}
+
+.box2 img {
+    height: 250px;
+    width: auto;
+    -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.box2 img:hover{
+     opacity:0;
+}
