@@ -11,37 +11,89 @@ body {
   background-size: cover;
 }
 
-.box1{
-    position:relative;
+.box1 {
+  position: relative;
 
-    top: 400px;
+  top: 400px;
+  left: 450px;
+  width: 150px;
+  height: 250px;
+  animation-name: lion;
+  animation-duration: 2s;
+}
+
+@keyframes lion {
+  0% {
     left: 450px;
-    width: 150px;
-    height: 250px;
+    top: 400px;
+  }
+  25% {
+    left: 450px;
+    top: 300px;
+  }
+  50% {
+    left: 450px;
+    top: 200px;
+  }
+  75% {
+    left: 450px;
+    top: 100px;
+  }
+  100% {
+    left: 450px;
+    top: 0px;
+  }
 }
 
 .box1 img {
-    height: 250px;
-    width: auto;
+  height: 250px;
+  width: auto;
 }
 
-.box2{
-    position:absolute;
-    top: 20px;
-    left: 70%;
-    width: 120px;
-    height: 250px;
+.box2 {
+  position: absolute;
+  top: 20px;
+  left: 70%;
+  width: 120px;
+  height: 250px;
 }
 
 .box2 img {
-    height: 250px;
-    width: auto;
-    -webkit-transition: opacity 1s ease-in-out;
+  height: 250px;
+  width: auto;
+  -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
-.box2 img:hover{
-     opacity:0;
+.box2 img:hover {
+  opacity: 0;
+}
+
+.box3 {
+  position: absolute;
+  top: 20px;
+  left: 30%;
+  width: 120px;
+  height: 100px;
+  animation: bird 5s infinite;
+}
+
+.box3 {
+  animation-timing-function: linear;
+}
+
+@keyframes bird {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+.box3 img {
+  height: 100px;
+  width: auto;
 }
